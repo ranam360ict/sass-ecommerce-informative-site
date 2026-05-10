@@ -1307,6 +1307,76 @@ h3 {
   transform: translate(-15%, -70%);
 }
 
+.productCard-1 .productVisual {
+  background:
+    linear-gradient(135deg, rgba(239, 93, 93, 0.25), transparent 46%),
+    linear-gradient(315deg, rgba(29, 147, 139, 0.18), transparent 48%),
+    #fff8fb;
+}
+
+.productCard-1 .boxShape {
+  width: 34%;
+  height: 44%;
+  border-radius: 70px 70px 18px 18px;
+  background: linear-gradient(135deg, var(--coral), #ffb7aa);
+  box-shadow:
+    -46px 22px 0 -8px var(--navy),
+    46px 22px 0 -8px var(--teal);
+}
+
+.productCard-1 .diskShape {
+  width: 18%;
+  border: 12px solid var(--gold);
+  transform: translate(-50%, -128%);
+}
+
+.productCard-2 .productVisual {
+  background:
+    linear-gradient(135deg, rgba(20, 33, 61, 0.18), transparent 44%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.28), transparent 50%),
+    #f8fbff;
+}
+
+.productCard-2 .boxShape {
+  width: 34%;
+  aspect-ratio: 0.64;
+  border: 12px solid var(--navy);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(29, 147, 139, 0.7), rgba(200, 241, 105, 0.35)),
+    white;
+  box-shadow: 62px 28px 0 -20px var(--gold);
+}
+
+.productCard-2 .diskShape {
+  width: 16%;
+  border: 10px solid var(--coral);
+  transform: translate(74%, -20%);
+}
+
+.productCard-3 .productVisual {
+  background:
+    linear-gradient(135deg, rgba(200, 241, 105, 0.3), transparent 42%),
+    linear-gradient(315deg, rgba(239, 93, 93, 0.16), transparent 50%),
+    #fbfff8;
+}
+
+.productCard-3 .boxShape {
+  width: 46%;
+  aspect-ratio: 1.25;
+  border-radius: 16px 16px 28px 28px;
+  background: linear-gradient(135deg, var(--teal), #70d3b5);
+  box-shadow:
+    0 -28px 0 -12px var(--gold),
+    52px 30px 0 -22px var(--coral);
+}
+
+.productCard-3 .diskShape {
+  width: 18%;
+  border: 10px solid var(--navy);
+  transform: translate(-116%, -14%);
+}
+
 .productInfo {
   flex: 1;
   display: flex;

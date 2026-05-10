@@ -598,8 +598,11 @@ export default function Home() {
           </h2>
         </div>
         <div className='productGrid'>
-          {productExamples.map((product) => (
-            <article className='productCard' key={product.title.en}>
+          {productExamples.map((product, index) => (
+            <article
+              className={`productCard productCard-${index + 1}`}
+              key={product.title.en}
+            >
               <div className='productVisual'>
                 <div className='boxShape' />
                 <div className='diskShape' />
