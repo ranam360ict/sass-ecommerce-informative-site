@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { companyUrl, siteUrl } from "./siteConfig";
 import "./globals.css";
-
-const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://m360ict.com")
-).replace(/\/$/, "");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -32,7 +28,7 @@ export const metadata: Metadata = {
     "ই-কমার্স সিস্টেম",
     "ই-কমার্স সফটওয়্যার",
   ],
-  authors: [{ name: "M360ICT", url: "https://m360ict.com" }],
+  authors: [{ name: "M360ICT", url: companyUrl }],
   creator: "M360ICT",
   publisher: "M360ICT",
   category: "E-Commerce Software",

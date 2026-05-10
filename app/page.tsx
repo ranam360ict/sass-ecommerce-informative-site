@@ -1,11 +1,7 @@
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { ScrollReveal } from './components/ScrollReveal';
-
-const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://m360ict.com')
-).replace(/\/$/, '');
+import { companyUrl, siteUrl } from './siteConfig';
 
 type TextPair = {
   en: string;
@@ -305,7 +301,7 @@ export default function Home() {
       creator: {
         '@type': 'Organization',
         name: 'M360ICT',
-        url: 'https://m360ict.com/',
+        url: companyUrl,
       },
       offers: {
         '@type': 'Offer',
@@ -318,7 +314,7 @@ export default function Home() {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: 'M360ICT',
-      url: 'https://m360ict.com/',
+      url: companyUrl,
       brand: {
         '@type': 'Brand',
         name: 'Memart',
