@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://m360ict.com";
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://m360ict.com")
+).replace(/\/$/, "");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
       "A complete e-commerce SaaS platform by M360ICT for storefront, admin control, inventory, orders, payments, and delivery workflow.",
     images: [
       {
-        url: "/memart-hero.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Memart e-commerce SaaS platform by M360ICT",
@@ -63,7 +66,7 @@ export const metadata: Metadata = {
     title: "Memart | M360ICT E-Commerce SaaS Platform",
     description:
       "Run products, orders, payments, delivery, and admin control from one e-commerce SaaS platform.",
-    images: ["/memart-hero.png"],
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,
