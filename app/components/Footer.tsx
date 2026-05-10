@@ -46,7 +46,11 @@ export function Footer() {
       <div className='footerMain'>
         <div className='footerBrand'>
           <a className='brand footerLogo' href='#top' aria-label='Memart home'>
-            <span>Me</span>
+            <img
+              className='brandLogo'
+              src='/memart_logo.jpg'
+              alt='Memart logo'
+            />
             <strong>Memart</strong>
           </a>
           <p>

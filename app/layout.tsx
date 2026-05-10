@@ -32,6 +32,16 @@ export const metadata: Metadata = {
   creator: "M360ICT",
   publisher: "M360ICT",
   category: "E-Commerce Software",
+  icons: {
+    icon: [
+      {
+        url: "/memart_logo.jpg",
+        type: "image/jpeg",
+      },
+    ],
+    shortcut: "/memart_logo.jpg",
+    apple: "/memart_logo.jpg",
+  },
   alternates: {
     canonical: "/",
     languages: {

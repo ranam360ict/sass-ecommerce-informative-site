@@ -46,7 +46,11 @@ export function Header() {
           aria-label='Memart home'
           onClick={() => setIsOpen(false)}
         >
-          <span>Me</span>
+          <img
+            className='brandLogo'
+            src='/memart_logo.jpg'
+            alt='Memart logo'
+          />
           <div className='brandText'>
             <strong>Memart</strong>
             <small>E-commerce SaaS</small>
