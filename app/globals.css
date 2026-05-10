@@ -1011,6 +1011,28 @@ h3 {
     linear-gradient(180deg, #ffffff 0%, #f6fbfb 100%);
 }
 
+.featureBand .sectionHeading {
+  grid-template-columns: minmax(140px, 0.32fr) minmax(0, 1.68fr);
+  margin-bottom: 64px;
+  align-items: end;
+  gap: 34px;
+}
+
+.featureBand h2 {
+  grid-column: 2;
+  grid-row: 1;
+  padding-bottom: 18px;
+  line-height: 1.12;
+}
+
+.featureBand .eyebrow {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  margin: 0;
+  color: var(--coral);
+}
+
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1537,12 +1559,16 @@ h3 {
   .flowGrid,
   .journeyRail,
   .productGrid,
-  .sectionHeading {
+  .sectionHeading,
+  .featureBand .sectionHeading {
     grid-template-columns: 1fr;
   }
 
-  .sectionHeading .sectionIntro {
+  .sectionHeading .sectionIntro,
+  .featureBand h2,
+  .featureBand .eyebrow {
     grid-column: 1;
+    grid-row: auto;
   }
 
   h2 {

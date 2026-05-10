@@ -506,15 +506,15 @@ export default function Home() {
 
       <section className='section featureBand' id='features'>
         <div className='sectionHeading'>
-          <p className='eyebrow'>
-            <T en='Detailed feature information' bn='ডিটেইল ফিচার ইনফরমেশন' />
-          </p>
           <h2>
             <T
               en='Everything your e-commerce team needs to sell, fulfil, and grow.'
               bn='সেল, ফুলফিল এবং গ্রো করার জন্য আপনার ই-কমার্স টিমের যা দরকার।'
             />
           </h2>
+          <p className='eyebrow'>
+            <T en='Detailed feature information' bn='ডিটেইল ফিচার ইনফরমেশন' />
+          </p>
         </div>
         <div className='featureGrid'>
           {featureColumns.map((column) => (
