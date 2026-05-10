@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "A complete e-commerce SaaS platform by M360ICT for storefront, admin control, inventory, orders, payments, and delivery workflow.",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/memart-hero.png",
         width: 1200,
         height: 630,
         alt: "Memart e-commerce SaaS platform by M360ICT",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Memart | M360ICT E-Commerce SaaS Platform",
     description:
       "Run products, orders, payments, delivery, and admin control from one e-commerce SaaS platform.",
-    images: ["/twitter-image"],
+    images: ["/memart-hero.png"],
   },
   robots: {
     index: true,
