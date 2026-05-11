@@ -59,8 +59,8 @@ const audienceCards = [
   {
     title: { en: 'For E-Commerce Owners', bn: 'ই-কমার্স মালিকদের জন্য' },
     copy: {
-      en: 'Memart gives business owners one system to run online sales with products, customers, orders, payments, delivery, and reports under control.',
-      bn: 'Memart ব্যবসার মালিককে প্রোডাক্ট, কাস্টমার, অর্ডার, পেমেন্ট, ডেলিভারি ও রিপোর্টসহ পুরো অনলাইন সেলস অপারেশন কন্ট্রোল করার সুবিধা দেয়।',
+      en: 'Business owners get one system to run online sales with products, customers, orders, payments, delivery, and reports under control.',
+      bn: 'ব্যবসার মালিক প্রোডাক্ট, কাস্টমার, অর্ডার, পেমেন্ট, ডেলিভারি ও রিপোর্টসহ পুরো অনলাইন সেলস অপারেশন কন্ট্রোল করার সুবিধা পান।',
     },
     points: [
       { en: 'Central dashboard', bn: 'সেন্ট্রাল ড্যাশবোর্ড' },
@@ -225,8 +225,8 @@ const journeySteps = [
   {
     label: { en: 'Discover', bn: 'খুঁজুন' },
     text: {
-      en: 'Customers enter Memart, browse categories, view promotions, and find products through search and filters.',
-      bn: 'কাস্টমার Memart-এ এসে ক্যাটাগরি ব্রাউজ করে, প্রমোশন দেখে এবং সার্চ-ফিল্টারের মাধ্যমে প্রোডাক্ট খুঁজে পায়।',
+      en: 'Customers enter the storefront, browse categories, view promotions, and find products through search and filters.',
+      bn: 'কাস্টমার স্টোরফ্রন্টে এসে ক্যাটাগরি ব্রাউজ করে, প্রমোশন দেখে এবং সার্চ-ফিল্টারের মাধ্যমে প্রোডাক্ট খুঁজে পায়।',
     },
   },
   {
@@ -291,13 +291,13 @@ export default function Home() {
     {
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
-      name: 'Memart',
-      alternateName: 'Memart E-Commerce SaaS',
+      name: 'E-Commerce SaaS Platform',
+      alternateName: 'E-Commerce Management Platform',
       url: siteUrl,
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
       description:
-        'Memart by M360ICT is an e-commerce SaaS platform for customer storefront, product and inventory control, admin management, order tracking, payment control, and delivery workflow.',
+        'M360ICT provides an e-commerce SaaS platform for customer storefront, product and inventory control, admin management, order tracking, payment control, and delivery workflow.',
       creator: {
         '@type': 'Organization',
         name: 'M360ICT',
@@ -317,7 +317,7 @@ export default function Home() {
       url: companyUrl,
       brand: {
         '@type': 'Brand',
-        name: 'Memart',
+        name: 'E-Commerce SaaS Platform',
       },
       makesOffer: {
         '@type': 'Offer',
@@ -345,18 +345,18 @@ export default function Home() {
         <div className='heroShade' />
         <div className='heroContent'>
           <h1>
-            Memart{' '}
-            <span className='subtitle'>
-              E-commerce SaaS That Keeps Sales Moving
-            </span>
+            <T
+              en='Complete E-Commerce Control From Storefront to Delivery'
+              bn='স্টোরফ্রন্ট থেকে ডেলিভারি পর্যন্ত সম্পূর্ণ ই-কমার্স কন্ট্রোল'
+            />
           </h1>
           <p>
             <T
-              en='Memart is a complete e-commerce SaaS platform for growing online businesses. It connects storefront, catalog, orders, payments, delivery, and admin control so the team can sell faster and manage smarter.'
-              bn='Memart গ্রোইং অনলাইন বিজনেসের জন্য একটি পূর্ণাঙ্গ ই-কমার্স SaaS প্ল্যাটফর্ম। এখানে স্টোরফ্রন্ট, ক্যাটালগ, অর্ডার, পেমেন্ট, ডেলিভারি এবং অ্যাডমিন কন্ট্রোল কানেক্টেড থাকে, তাই টিম দ্রুত সেল করতে এবং স্মার্টভাবে ম্যানেজ করতে পারে।'
+              en='Bring storefront, catalog, inventory, orders, payments, delivery, offers, staff access, and admin reports into one connected platform built for faster selling and smarter daily operations.'
+              bn='স্টোরফ্রন্ট, ক্যাটালগ, ইনভেন্টরি, অর্ডার, পেমেন্ট, ডেলিভারি, অফার, স্টাফ অ্যাক্সেস এবং অ্যাডমিন রিপোর্ট এক কানেক্টেড প্ল্যাটফর্মে এনে দ্রুত সেল ও স্মার্ট অপারেশন চালান।'
             />
           </p>
-          <div className='heroProof' aria-label='Memart user areas'>
+          <div className='heroProof' aria-label='Platform user areas'>
             <span>
               <T en='Customer Website' bn='কাস্টমার সাইট' />
             </span>
@@ -369,13 +369,13 @@ export default function Home() {
           </div>
           <div className='heroActions'>
             <a className='primaryBtn' href='#overview'>
-              <T en='See How Memart Works' bn='Memart কীভাবে কাজ করে দেখুন' />
+              <T en='See How It Works' bn='কীভাবে কাজ করে দেখুন' />
             </a>
           </div>
         </div>
       </section>
 
-      <section className='ticker' aria-label='Memart highlights'>
+      <section className='ticker' aria-label='Platform highlights'>
         <span>
           <T en='Customer storefront' bn='কাস্টমার শপিং সাইট' />
         </span>
@@ -433,7 +433,7 @@ export default function Home() {
       <section className='section audienceBand' id='users'>
         <div className='sectionHeading compact'>
           <p className='eyebrow'>
-            <T en='Who Memart is for' bn='Memart কার জন্য' />
+            <T en='Who this is for' bn='কার জন্য' />
           </p>
           <h2>
             <T
@@ -476,8 +476,8 @@ export default function Home() {
           </h2>
           <p>
             <T
-              en='Memart includes a strong admin area for business owners and staff. From this panel, the team can manage product data, check orders, update payment and delivery status, create offers, control access, and view business performance reports.'
-              bn='Memart-এ বিজনেস মালিক ও স্টাফের জন্য শক্তিশালী অ্যাডমিন এরিয়া আছে। এখান থেকে প্রোডাক্ট ডাটা ম্যানেজ, অর্ডার চেক, পেমেন্ট ও ডেলিভারি স্ট্যাটাস আপডেট, অফার তৈরি, অ্যাক্সেস কন্ট্রোল এবং রিপোর্ট দেখা যায়।'
+              en='The platform includes a strong admin area for business owners and staff. From this panel, the team can manage product data, check orders, update payment and delivery status, create offers, control access, and view business performance reports.'
+              bn='বিজনেস মালিক ও স্টাফের জন্য শক্তিশালী অ্যাডমিন এরিয়া আছে। এখান থেকে প্রোডাক্ট ডাটা ম্যানেজ, অর্ডার চেক, পেমেন্ট ও ডেলিভারি স্ট্যাটাস আপডেট, অফার তৈরি, অ্যাক্সেস কন্ট্রোল এবং রিপোর্ট দেখা যায়।'
             />
           </p>
           <div className='metricRow'>

@@ -40,18 +40,30 @@ const footerLinks = [
   },
 ];
 
+const supportDetails = [
+  {
+    label: 'Call',
+    value: '09638-336699, 01958398325, 01958398313, +880 1958-398308',
+    href: 'tel:+8809638336699',
+  },
+  {
+    label: 'Timing',
+    value: '10:00AM to 06:00PM',
+  },
+  {
+    label: 'Email',
+    value: 'sup.m360ict@gmail.com',
+    href: 'mailto:sup.m360ict@gmail.com',
+  },
+];
+
 export function Footer() {
   return (
     <footer className='footer'>
       <div className='footerMain'>
         <div className='footerBrand'>
-          <a className='brand footerLogo' href='#top' aria-label='Memart home'>
-            <img
-              className='brandLogo'
-              src='/memart_logo.jpg'
-              alt='Memart logo'
-            />
-            <strong>Memart</strong>
+          <a className='brand footerLogo' href='#top' aria-label='Home'>
+            <img className='brandLogo' src='/memart_logo.png' alt='Logo' />
           </a>
           <p>
             <T
@@ -64,9 +76,9 @@ export function Footer() {
         <div className='footerColumns'>
           {footerLinks.map((group) => (
             <div className='footerColumn' key={group.title.en}>
-              <h3>
+              <h5 className='footerGroupTitle'>
                 <T {...group.title} />
-              </h3>
+              </h5>
               {group.links.map((link) => (
                 <a href={link.href} key={link.href}>
                   <T {...link.label} />
@@ -74,26 +86,31 @@ export function Footer() {
               ))}
             </div>
           ))}
-          <div className='footerColumn footerCredit'>
-            <h3>
-              <T en='Built By' bn='তৈরি করেছে' />
-            </h3>
-            <a href='https://m360ict.com/' target='_blank' rel='noreferrer'>
-              <T en='Designed by M360ICT' bn='ডিজাইন বাই M360ICT' />
-            </a>
-            <a href='https://m360ict.com/' target='_blank' rel='noreferrer'>
-              <T en='Visit m360ict.com' bn='m360ict.com দেখুন' />
-            </a>
-          </div>
+          <section
+            className='footerColumn footerSupport'
+            aria-labelledby='footer-support-title'
+          >
+            <p className='footerSupportKicker'>Support Details</p>
+
+            <div className='footerSupportRows'>
+              {supportDetails.map((item) => (
+                <div className='footerSupportRow' key={item.label}>
+                  <span>{item.label}</span>
+                  {item.href ? (
+                    <a href={item.href}>{item.value}</a>
+                  ) : (
+                    <p>{item.value}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
 
       <div className='footerBottom'>
         <span>
-          <T
-            en='Memart e-commerce platform'
-            bn='Memart ই-কমার্স প্ল্যাটফর্ম '
-          />
+          <T en='E-commerce platform' bn='ই-কমার্স প্ল্যাটফর্ম ' />
         </span>
         <span>
           <T

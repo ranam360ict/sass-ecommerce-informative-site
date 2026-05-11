@@ -5,16 +5,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  applicationName: "Memart",
+  applicationName: "E-Commerce SaaS Platform",
   title: {
     default:
-      "Memart | M360ICT E-Commerce SaaS Management Platform | ই-কমার্স সিস্টেম",
-    template: "%s | Memart E-Commerce SaaS",
+      "M360ICT E-Commerce SaaS Management Platform | ই-কমার্স সিস্টেম",
+    template: "%s | E-Commerce SaaS",
   },
   description:
-    "Memart by M360ICT is a bilingual e-commerce SaaS platform for online shopping, product and inventory control, admin management, order tracking, payment control, and delivery workflow.",
+    "M360ICT provides a bilingual e-commerce SaaS platform for online shopping, product and inventory control, admin management, order tracking, payment control, and delivery workflow.",
   keywords: [
-    "Memart",
     "M360ICT",
     "M360ICT e-commerce",
     "e-commerce SaaS",
@@ -35,12 +34,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/memart_logo.jpg",
-        type: "image/jpeg",
+        url: "/memart_logo.png",
+        type: "image/png",
       },
     ],
-    shortcut: "/memart_logo.jpg",
-    apple: "/memart_logo.jpg",
+    shortcut: "/memart_logo.png",
+    apple: "/memart_logo.png",
   },
   alternates: {
     canonical: "/",
@@ -52,8 +51,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Memart",
-    title: "Memart | M360ICT E-Commerce SaaS Management Platform",
+    siteName: "M360ICT E-Commerce SaaS",
+    title: "M360ICT E-Commerce SaaS Management Platform",
     description:
       "A complete e-commerce SaaS platform by M360ICT for storefront, admin control, inventory, orders, payments, and delivery workflow.",
     images: [
@@ -61,7 +60,7 @@ export const metadata: Metadata = {
         url: "/memart-hero.png",
         width: 1200,
         height: 630,
-        alt: "Memart e-commerce SaaS platform by M360ICT",
+        alt: "E-commerce SaaS platform by M360ICT",
       },
     ],
     locale: "en_US",
@@ -69,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Memart | M360ICT E-Commerce SaaS Platform",
+    title: "M360ICT E-Commerce SaaS Platform",
     description:
       "Run products, orders, payments, delivery, and admin control from one e-commerce SaaS platform.",
     images: ["/memart-hero.png"],

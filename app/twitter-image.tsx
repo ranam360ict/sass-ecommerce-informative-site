@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Memart e-commerce SaaS platform by M360ICT';
+export const alt = 'E-commerce SaaS platform by M360ICT';
 export const size = {
   width: 1200,
   height: 630,
@@ -43,7 +43,7 @@ export default function Image() {
               lineHeight: 0.94,
             }}
           >
-            Memart
+            E-Commerce Platform
           </div>
           <div
             style={{
