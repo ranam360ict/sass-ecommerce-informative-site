@@ -1601,6 +1601,15 @@ h3 {
   font-weight: 750;
 }
 
+.footerBottom a {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 900;
+}
+
+.footerBottom a:hover {
+  color: #00c8ff;
+}
+
 @media (max-width: 1440px) {
   .footer {
     padding-right: 5vw;

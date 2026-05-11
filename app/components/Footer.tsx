@@ -113,10 +113,18 @@ export function Footer() {
           <T en='E-commerce platform' bn='ই-কমার্স প্ল্যাটফর্ম ' />
         </span>
         <span>
-          <T
-            en='Designed and developed by M360ICT'
-            bn='ডিজাইন ও ডেভেলপড বাই M360ICT'
-          />
+          <span className='lang-en'>
+            Designed and developed by{' '}
+            <a href='https://m360ict.com/' target='_blank' rel='noreferrer'>
+              M360ICT
+            </a>
+          </span>
+          <span className='lang-bn'>
+            ডিজাইন ও ডেভেলপড বাই{' '}
+            <a href='https://m360ict.com/' target='_blank' rel='noreferrer'>
+              M360ICT
+            </a>
+          </span>
         </span>
       </div>
     </footer>
